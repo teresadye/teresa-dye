@@ -3294,8 +3294,6 @@ body.is-touch #banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-position: left center;
-    background-color: #0003;
   }
 }
 
