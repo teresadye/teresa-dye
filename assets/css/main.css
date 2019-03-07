@@ -2098,6 +2098,16 @@ button.big,
   font-size: 1.35em;
 }
 
+@media screen and (max-width: 500px) {
+  input[type='submit'].big,
+  input[type='reset'].big,
+  input[type='button'].big,
+  button.big,
+  .button.big {
+    font-size: 1.15em;
+  }
+}
+
 input[type='submit'].disabled,
 input[type='submit']:disabled,
 input[type='reset'].disabled,
@@ -3109,7 +3119,7 @@ body.is-touch .wrapper.style3 {
 .navPanelToggle {
   text-decoration: none;
   text-decoration: none;
-  height: 100%;
+  height: 50%;
   left: 0;
   position: absolute;
   top: 0;
@@ -3270,7 +3280,7 @@ body.is-touch #banner {
 #banner {
   padding: 16em 0 13em 0;
   background-attachment: fixed;
-  background: url('../../images/hero-bg.jpg');
+  background-image: url('../../images/hero-bg.jpg');
   background-blend-mode: overlay;
   background-position: center center;
   background-size: cover;
@@ -3280,7 +3290,7 @@ body.is-touch #banner {
 
 @media screen and (max-width: 800px) {
   #banner {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
