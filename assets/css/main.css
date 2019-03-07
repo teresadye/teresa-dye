@@ -3281,7 +3281,6 @@ body.is-touch #banner {
   padding: 16em 0 13em 0;
   background-attachment: fixed;
   background-image: url('../../images/hero-bg.jpg');
-  background-blend-mode: overlay;
   background-position: center center;
   background-size: cover;
   line-height: 1.75;
@@ -3294,6 +3293,8 @@ body.is-touch #banner {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-position: left center;
+    +background-color: #0003;
   }
 }
 
