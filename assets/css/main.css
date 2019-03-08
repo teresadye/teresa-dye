@@ -96,6 +96,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  scroll-behavior: smooth;
 }
 
 article,
@@ -3294,7 +3295,7 @@ body.is-touch #banner {
     flex-direction: column;
     justify-content: center;
     background-position: left center;
-    +background-color: #0003;
+    background-color: #0003;
   }
 }
 
@@ -3308,6 +3309,7 @@ body.is-touch #banner {
   font-size: 3.5em;
   line-height: 1.35;
   margin-bottom: 0.5em;
+  animation: fadeIn 3s ease;
 }
 
 #banner p {
@@ -3315,6 +3317,16 @@ body.is-touch #banner {
   font-size: 1.5em;
   margin-bottom: 1.75em;
   text-transform: uppercase;
+  animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -3354,6 +3366,19 @@ body.is-touch #banner {
 @media screen and (max-width: 480px) {
   #banner {
     padding: 4em 2em 4em 2em;
+  }
+}
+
+.banner__btn {
+  animation: slideInRight 1s ease;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transfrom: translateX(0);
   }
 }
 
@@ -3464,6 +3489,14 @@ body.is-touch #banner {
 }
 
 /* Experience */
+
+:target h2,
+:target h2 + p,
+:target i,
+:target [type='submit'],
+:target img {
+  animation: fadeIn 2s linear;
+}
 
 @media screen and (max-width: 500px) {
   #experience .experience__logos > div {
