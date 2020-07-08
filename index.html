@@ -6,253 +6,287 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="icon" href="/images/favicon.png" />
+    <style>
+      .not-found {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #d5e9f6;
+      }
+
+      .not-found .lost__image-wrap {
+        width: 600px;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+
+      .not-found .lost__image-wrap img {
+        max-width: 100%;
+      }
+
+      .not-found .lost__text {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #333;
+        text-align: center;
+      }
+    </style>
   </head>
-  <body class="landing">
-    <!-- Header -->
-    <header id="header" class="alt">
-      <h1>
-        <a href="/"><strong style="color:#fff;">Teresa</strong> Dye</a>
-      </h1>
-      <nav id="nav">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li>
-            <a href="/images/Teresa-Dye-Early-Childhood-Educator.pdf">resume</a>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-
-    <!-- Banner -->
-    <section id="banner">
-      <h2>Early Childhood Educator</h2>
-      <p>
-        Dedicated to the success of the next generation.
-      </p>
-      <ul class="actions">
-        <li>
-          <a href="#about" class="button special big banner__btn">Learn More</a>
-        </li>
-      </ul>
-    </section>
-
-    <!-- One -->
-    <section id="about" class="wrapper style1">
-      <div class="container 75%">
-        <div class="row 200%">
-          <div class="6u 12u$(medium)">
-            <img
-              width="300px"
-              src="images/Teresa-Dye.jpg"
-              alt="Teresa Dye"
-              class="about__profile"
-            />
-          </div>
-          <div class="6u$ 12u$(medium)">
-            <p>
-              <strong
-                >I have more than 20 years of experience developing and leading
-                creative programs for children from birth to 5 years of
-                age.</strong
-              >
-              I am passionate about ensuring that each and every child gets the
-              best possible start at life.
-            </p>
-            <p>
-              As an educator, my goal is to provide a fun learning environment
-              that is both inviting and nurturing. I strive to offer
-              opportunities for children to play, problem solve, question, and
-              experiment with new ideas and explore the world around them.
-            </p>
-          </div>
-        </div>
+  <body class="not-found">
+    <div class="lost">
+      <div class="lost__image-wrap">
+        <img src="/images/Balloon Lost-big.png" alt="Page not found" />
       </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience" class="wrapper style2 special">
-      <div class="container">
-        <header class="major">
-          <h2>Previous Experience</h2>
-          <p>
-            I have had the privilege of working with the following
-            organizations.
-          </p>
-        </header>
-        <div class="row 150% experience__logos">
-          <div class="6u 12u$(xsmall)">
-            <div class="captioned">
-              <img
-                src="images/woc-logo.png"
-                alt="World Outreach Church in Murfreesboro, Tennessee"
-                class="center"
-                width="250"
-              />
-              <h3>World Outreach Church</h3>
-            </div>
-          </div>
-          <div class="6u$ 12u$(xsmall)">
-            <div class="captioned">
-              <img
-                src="images/3bc-logo.png"
-                alt="3rd Baptist Church in Murfreesboro, Tennessee"
-                class="center"
-                width="250"
-              />
-              <h3>Third Baptist Church.</h3>
-            </div>
-          </div>
-        </div>
-        <ul class="actions">
-          <li><a href="#contact" class="button special big">Contact Me</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="wrapper style1">
-      <div class="container">
-        <header class="major center">
-          <h2>Skills</h2>
-          <p>My core strengths</p>
-        </header>
-        <div class="feature-grid">
-          <div class="feature">
-            <div class="content center">
-              <header>
-                <i class="icon color-primary fa fa-user font-lg mb-sm"></i>
-                <h4>Leadership</h4>
-              </header>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="content center">
-              <header>
-                <i
-                  class="icon color-primary fa fa-graduation-cap font-lg mb-sm"
-                ></i>
-                <h4>Education</h4>
-              </header>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="content center">
-              <header>
-                <i class="icon color-primary fa fa-users font-lg mb-sm"></i>
-                <h4>Parent Communication</h4>
-              </header>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="content center">
-              <header>
-                <i class="icon color-primary fa fa-check font-lg mb-sm"></i>
-                <h4>Classroom Management</h4>
-              </header>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="content center">
-              <header>
-                <i class="icon color-primary fa fa-pencil font-lg mb-sm"></i>
-                <h4>Lesson Planning</h4>
-              </header>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="content center">
-              <header>
-                <i class="icon color-primary fa fa-heart font-lg mb-sm"></i>
-                <h4>Love for Children</h4>
-              </header>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="wrapper style3 special">
-      <div class="container">
-        <header class="major"><h2>Contact Me</h2></header>
-        <form
-          method="post"
-          class="wrapper style4 br-sm p-default"
-          name="contact"
-          data-netlify="true"
-        >
-          <div class="row uniform 50%">
-            <div class="6u 12u$(xsmall)">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                value=""
-                placeholder="Name"
-              />
-            </div>
-            <div class="6u$ 12u$(xsmall)">
-              <input
-                type="email"
-                name="email"
-                id="email"
-                value=""
-                placeholder="Email"
-              />
-            </div>
-            <div class="12u$">
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Enter your message"
-                rows="6"
-              ></textarea>
-            </div>
-            <div class="12u$">
-              <ul class="actions">
-                <li>
-                  <input type="submit" value="Send Message" class="special" />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <div class="container">
-        <ul class="icons">
-          <li>
-            <a
-              href="https://www.facebook.com/teresa.dye.982"
-              class="icon fa-facebook"
-              target="facebook"
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/teresa-mcghee-dye/"
-              class="icon fa-linkedin"
-              target="linkedin"
-            ></a>
-          </li>
-        </ul>
-        <ul class="copyright">
-          <li>Copyright &copy; 2019 Teresa Dye | All Rights Reserved</li>
-        </ul>
-      </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+      <p class="lost__text">This page is lost in the wind</p>
+    </div>
   </body>
+  <!-- <body class="landing"> -->
+  <!-- Header -->
+  <!-- <header id="header" class="alt"> -->
+  <!-- <h1> -->
+  <!-- <a href="/"><strong style="color:#fff;">Teresa</strong> Dye</a> -->
+  <!-- </h1> -->
+  <!-- <nav id="nav"> -->
+  <!-- <ul> -->
+  <!-- <li><a href="/">Home</a></li> -->
+  <!-- <li><a href="#about">About</a></li> -->
+  <!-- <li> -->
+  <!-- <a href="/images/Teresa-Dye-Early-Childhood-Educator.pdf">resume</a> -->
+  <!-- </li> -->
+  <!-- <li><a href="#contact">Contact</a></li> -->
+  <!-- </ul> -->
+  <!-- </nav> -->
+  <!-- </header> -->
+  <!--  -->
+  <!-- <a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a> -->
+  <!--  -->
+  <!-- Banner -->
+  <!-- <section id="banner"> -->
+  <!-- <h2>Early Childhood Educator</h2> -->
+  <!-- <p> -->
+  <!-- Dedicated to the success of the next generation. -->
+  <!-- </p> -->
+  <!-- <ul class="actions"> -->
+  <!-- <li> -->
+  <!-- <a href="#about" class="button special big banner__btn">Learn More</a> -->
+  <!-- </li> -->
+  <!-- </ul> -->
+  <!-- </section> -->
+  <!--  -->
+  <!-- One -->
+  <!-- <section id="about" class="wrapper style1"> -->
+  <!-- <div class="container 75%"> -->
+  <!-- <div class="row 200%"> -->
+  <!-- <div class="6u 12u$(medium)"> -->
+  <!-- <img -->
+  <!-- width="300px" -->
+  <!-- src="images/Teresa-Dye.jpg" -->
+  <!-- alt="Teresa Dye" -->
+  <!-- class="about__profile" -->
+  <!-- /> -->
+  <!-- </div> -->
+  <!-- <div class="6u$ 12u$(medium)"> -->
+  <!-- <p> -->
+  <!-- <strong -->
+  <!-- >I have more than 20 years of experience developing and leading -->
+  <!-- creative programs for children from birth to 5 years of -->
+  <!-- age.</strong -->
+  <!-- > -->
+  <!-- I am passionate about ensuring that each and every child gets the -->
+  <!-- best possible start at life. -->
+  <!-- </p> -->
+  <!-- <p> -->
+  <!-- As an educator, my goal is to provide a fun learning environment -->
+  <!-- that is both inviting and nurturing. I strive to offer -->
+  <!-- opportunities for children to play, problem solve, question, and -->
+  <!-- experiment with new ideas and explore the world around them. -->
+  <!-- </p> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </section> -->
+  <!--  -->
+  <!-- Experience -->
+  <!-- <section id="experience" class="wrapper style2 special"> -->
+  <!-- <div class="container"> -->
+  <!-- <header class="major"> -->
+  <!-- <h2>Previous Experience</h2> -->
+  <!-- <p> -->
+  <!-- I have had the privilege of working with the following -->
+  <!-- organizations. -->
+  <!-- </p> -->
+  <!-- </header> -->
+  <!-- <div class="row 150% experience__logos"> -->
+  <!-- <div class="6u 12u$(xsmall)"> -->
+  <!-- <div class="captioned"> -->
+  <!-- <img -->
+  <!-- src="images/woc-logo.png" -->
+  <!-- alt="World Outreach Church in Murfreesboro, Tennessee" -->
+  <!-- class="center" -->
+  <!-- width="250" -->
+  <!-- /> -->
+  <!-- <h3>World Outreach Church</h3> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- <div class="6u$ 12u$(xsmall)"> -->
+  <!-- <div class="captioned"> -->
+  <!-- <img -->
+  <!-- src="images/3bc-logo.png" -->
+  <!-- alt="3rd Baptist Church in Murfreesboro, Tennessee" -->
+  <!-- class="center" -->
+  <!-- width="250" -->
+  <!-- /> -->
+  <!-- <h3>Third Baptist Church.</h3> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- <ul class="actions"> -->
+  <!-- <li><a href="#contact" class="button special big">Contact Me</a></li> -->
+  <!-- </ul> -->
+  <!-- </div> -->
+  <!-- </section> -->
+  <!--  -->
+  <!-- Skills -->
+  <!-- <section id="skills" class="wrapper style1"> -->
+  <!-- <div class="container"> -->
+  <!-- <header class="major center"> -->
+  <!-- <h2>Skills</h2> -->
+  <!-- <p>My core strengths</p> -->
+  <!-- </header> -->
+  <!-- <div class="feature-grid"> -->
+  <!-- <div class="feature"> -->
+  <!-- <div class="content center"> -->
+  <!-- <header> -->
+  <!-- <i class="icon color-primary fa fa-user font-lg mb-sm"></i> -->
+  <!-- <h4>Leadership</h4> -->
+  <!-- </header> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- <div class="feature"> -->
+  <!-- <div class="content center"> -->
+  <!-- <header> -->
+  <!-- <i -->
+  <!-- class="icon color-primary fa fa-graduation-cap font-lg mb-sm" -->
+  <!-- ></i> -->
+  <!-- <h4>Education</h4> -->
+  <!-- </header> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- <div class="feature"> -->
+  <!-- <div class="content center"> -->
+  <!-- <header> -->
+  <!-- <i class="icon color-primary fa fa-users font-lg mb-sm"></i> -->
+  <!-- <h4>Parent Communication</h4> -->
+  <!-- </header> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- <div class="feature"> -->
+  <!-- <div class="content center"> -->
+  <!-- <header> -->
+  <!-- <i class="icon color-primary fa fa-check font-lg mb-sm"></i> -->
+  <!-- <h4>Classroom Management</h4> -->
+  <!-- </header> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- <div class="feature"> -->
+  <!-- <div class="content center"> -->
+  <!-- <header> -->
+  <!-- <i class="icon color-primary fa fa-pencil font-lg mb-sm"></i> -->
+  <!-- <h4>Lesson Planning</h4> -->
+  <!-- </header> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- <div class="feature"> -->
+  <!-- <div class="content center"> -->
+  <!-- <header> -->
+  <!-- <i class="icon color-primary fa fa-heart font-lg mb-sm"></i> -->
+  <!-- <h4>Love for Children</h4> -->
+  <!-- </header> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </section> -->
+  <!--  -->
+  <!-- Contact -->
+  <!-- <section id="contact" class="wrapper style3 special"> -->
+  <!-- <div class="container"> -->
+  <!-- <header class="major"><h2>Contact Me</h2></header> -->
+  <!-- <form -->
+  <!-- method="post" -->
+  <!-- class="wrapper style4 br-sm p-default" -->
+  <!-- name="contact" -->
+  <!-- data-netlify="true" -->
+  <!-- > -->
+  <!-- <div class="row uniform 50%"> -->
+  <!-- <div class="6u 12u$(xsmall)"> -->
+  <!-- <input -->
+  <!-- type="text" -->
+  <!-- name="name" -->
+  <!-- id="name" -->
+  <!-- value="" -->
+  <!-- placeholder="Name" -->
+  <!-- /> -->
+  <!-- </div> -->
+  <!-- <div class="6u$ 12u$(xsmall)"> -->
+  <!-- <input -->
+  <!-- type="email" -->
+  <!-- name="email" -->
+  <!-- id="email" -->
+  <!-- value="" -->
+  <!-- placeholder="Email" -->
+  <!-- /> -->
+  <!-- </div> -->
+  <!-- <div class="12u$"> -->
+  <!-- <textarea -->
+  <!-- name="message" -->
+  <!-- id="message" -->
+  <!-- placeholder="Enter your message" -->
+  <!-- rows="6" -->
+  <!-- ></textarea> -->
+  <!-- </div> -->
+  <!-- <div class="12u$"> -->
+  <!-- <ul class="actions"> -->
+  <!-- <li> -->
+  <!-- <input type="submit" value="Send Message" class="special" /> -->
+  <!-- </li> -->
+  <!-- </ul> -->
+  <!-- </div> -->
+  <!-- </div> -->
+  <!-- </form> -->
+  <!-- </div> -->
+  <!-- </section> -->
+  <!--  -->
+  <!-- Footer -->
+  <!-- <footer id="footer"> -->
+  <!-- <div class="container"> -->
+  <!-- <ul class="icons"> -->
+  <!-- <li> -->
+  <!-- <a -->
+  <!-- href="https://www.facebook.com/teresa.dye.982" -->
+  <!-- class="icon fa-facebook" -->
+  <!-- target="facebook" -->
+  <!-- ></a> -->
+  <!-- </li> -->
+  <!-- <li> -->
+  <!-- <a -->
+  <!-- href="https://www.linkedin.com/in/teresa-mcghee-dye/" -->
+  <!-- class="icon fa-linkedin" -->
+  <!-- target="linkedin" -->
+  <!-- ></a> -->
+  <!-- </li> -->
+  <!-- </ul> -->
+  <!-- <ul class="copyright"> -->
+  <!-- <li>Copyright &copy; 2019 Teresa Dye | All Rights Reserved</li> -->
+  <!-- </ul> -->
+  <!-- </div> -->
+  <!-- </footer> -->
+  <!--  -->
+  <!-- Scripts -->
+  <!-- <script src="assets/js/jquery.min.js"></script> -->
+  <!-- <script src="assets/js/skel.min.js"></script> -->
+  <!-- <script src="assets/js/util.js"></script> -->
+  <!-- <script src="assets/js/main.js"></script> -->
+  <!-- </body> -->
 </html>
